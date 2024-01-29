@@ -65,6 +65,7 @@ my_source = openmc.Source()
 my_source.space = openmc.stats.Point((0, 0, 0))
 my_source.angle = openmc.stats.Isotropic()
 my_source.energy = openmc.stats.Discrete([2.5e6], [1])
+my_source.particle =='photon'
 
 # specifies the simulation computational intensity
 settings = openmc.Settings()
